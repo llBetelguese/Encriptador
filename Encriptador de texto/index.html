@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+
+    <main class = "Maestro">
+        <div class = "ImagenSuperior">
+            <img src="./assets/PuertaBanco.jpeg" alt="Puerta de una bobeda de banco">
+        </div>
+        <div class = "PresentacionPrincipal">
+            <textarea id="TextoDeEntrada" placeholder = "Escribe aqui tu mensaje" class = "MensajeDeEntrada"></textarea>
+                <div class = "Alerta">
+                <div class = "ImagenAlerta">
+                    <img src="./assets/Alerta.jpeg" alt="Imagen de un signo de exclamacion encerrado en un triangulo">
+                </div>
+                    <p>
+                        Solo letras minusculas y sin acentos
+                    </p>
+                </div>
+                <div class = "BotonesPrincipal">
+                        <button onclick="Encriptador();" class = "BottonEncriptar">
+                            Encriptar
+                        </button>
+                        <button onclick="Desencriptador();" class = "BottonDesencriptar">
+                            Desencriptar
+                        </button>
+                </div>
+        </div>
+
+        <div class = "PresentacionSecundaria">
+                <img id = "Muneco" class = "Muneco" src="./assets/Muñeco.png" alt="Una persona con una lupa">
+                <p id = "TextoDeSalida" class ="MensajeDeSalida">Ningun Mensaje fue encontrado. <br> Ingrese el texto que desees encriptar o desencriptar. <br> </p>
+                <button id = "Copiar" class = "BottonCopiar" onclick="Copiar()">Copiar</button>
+        </div>
+
+    </main>
+    
+</body>
+
+<footer class = "footer">
+    <p>Desarrollado por Armando</p>
+</footer>
+
+</html>
+
+<script src="encriptador.js" defer></script>

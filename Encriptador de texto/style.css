@@ -1,0 +1,145 @@
+
+body{
+    background-color: #F3F5FC;
+    color: #006ba6;
+}
+
+.MensajeDeEntrada{
+    height: 80%;
+    width: 90%;
+    background-color: #F3F5FC;
+    color: #006ba6;
+    border: none;
+    resize: none;
+    font-size: 1.5rem;
+}
+
+.ImagenSuperior{
+    display: flex;
+    align-self: start;
+    width: 7%;
+    height: 7%;
+}
+
+.PresentacionPrincipal{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    margin: 10%;
+}
+
+.BotonesPrincipal{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.BottonEncriptar{
+    background-color: #0A3871;
+    color: #D8DFE8;
+    text-decoration: none;
+    border-radius: 16px;
+    width: 45%;
+    height: 90%;
+
+
+}
+
+.BottonDesencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    text-decoration: none;
+    border-radius: 16px;
+    width: 45%;
+    height: 90%;
+
+}
+
+.Alerta{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ImagenAlerta{
+    display: flex;
+    width: 14px;
+    height: 14px;
+}
+
+.PresentacionSecundaria{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    height: 60%;
+    width: 25%;
+
+}
+
+.ImagenSalida{
+    width: 336px;
+    height: 306px;
+}
+
+.MensajeDeSalida{
+    height: 50%;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.BottonCopiar{
+    background-color: #D8DFE8;
+    border-radius: 16px;
+    width: 85%;
+    height: 13%;
+    display: none;
+
+}
+
+.Muneco{
+    display: block;
+    width: 85%;
+    height: 50%;
+}
+
+.Maestro{
+    display: flex;
+    height: 90vh;
+    box-sizing: border-box;
+}
+
+.footer{
+    padding: 4px;
+    background-color: #0A3871;
+    color: #D8DFE8;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 100%;
+    
+}
+
+@media (max-width: 1200px){
+    .Maestro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .PresentacionSecundaria{
+        height: 45%;
+        width: 70%;
+    }
+    .footer{
+        height: 5%;
+    }
+    .MensajeDeSalida{
+        width: auto;
+    }
+}
